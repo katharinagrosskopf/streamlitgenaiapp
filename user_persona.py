@@ -2,12 +2,12 @@
 import streamlit as st
 
 def app():
-    st.title('User Persona Creation')
+    st.title('DU')
 
     # Eingabefelder für grundlegende Informationen der User Persona
     with st.form(key='user_persona_form'):
-        name = st.text_input("Name der Persona")
-        alter = st.slider("Alter", 18, 100, 30)  # Min, Max, Default
+        name = st.text_input("Name und Vorname")
+        alter = st.slider("Alter", 16, 100, 30)  # Min, Max, Default
         geschlecht = st.selectbox("Geschlecht", ["Männlich", "Weiblich", "Andere"])
 
         # Psychografische Daten
@@ -20,7 +20,7 @@ def app():
         markenpraferenzen = st.text_area("Markenpräferenzen")
 
         # Knopf zum Absenden des Formulars
-        submit_button = st.form_submit_button("User Persona erstellen")
+        submit_button = st.form_submit_button("Abschicken")
 
         if submit_button:
             # Speichern der Persona-Daten im session_state

@@ -11,7 +11,7 @@ from assistant import OPENAI_ASSISTANT
 
 
 def app():
-    st.title('OpenAI Model')
+    st.title('Chatbot')
 
     # Initialize OpenAI client
     client = OpenAI()
@@ -70,7 +70,7 @@ def app():
 
 
 # Chat input and message creation with file ID
-    if prompt := st.chat_input("Wie kann ich Ihnen helfen?"):
+    if prompt := st.chat_input("Was gibts?"):
         with st.chat_message('user'):
             st.write(prompt)
 

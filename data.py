@@ -3,7 +3,7 @@
 import streamlit as st
 
 def app():
-    st.title('Data')
+    st.title('Gespeichte Daten')
 
     # Check if persona_data is available in session state
     if 'persona_data' in st.session_state:

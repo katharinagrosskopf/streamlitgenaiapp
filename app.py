@@ -9,14 +9,14 @@ import data
 # and you need to fill in the ID in the assistant.py file
 
 PAGES = {
-    "Persona": user_persona,
-    "Company Information": company_info,
-    "Data": data,
-    "OpenAI Model": openai_model,
+    "Wer bist du?": user_persona,
+    "Wer bin ich?": company_info,
+    "Deine Daten": data,
+    "Chatbot": openai_model,
 }
 
-st.sidebar.title('Navigation')
-selection = st.sidebar.radio("Go to", list(PAGES.keys()))
+st.sidebar.title('Menü')
+selection = st.sidebar.radio("Gehe zu", list(PAGES.keys()))
 
 page = PAGES[selection]
 page.app()
