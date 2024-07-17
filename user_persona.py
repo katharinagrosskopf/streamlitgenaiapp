@@ -2,7 +2,7 @@
 import streamlit as st
 
 def app():
-    st.title('DU')
+    st.title('Zielgruppenprofil')
 
     # Eingabefelder für grundlegende Informationen der User Persona
     with st.form(key='user_persona_form'):
@@ -11,16 +11,16 @@ def app():
         geschlecht = st.selectbox("Geschlecht", ["Männlich", "Weiblich", "Andere"])
 
         # Psychografische Daten
-        interessen = st.text_area("Interessen und Hobbys")
-        werte = st.text_area("Werte und Einstellungen")
+        interessen = st.text_area("Interessen und Hobbys", placeholder= "z.B. Sport, Reisen, Kochen")
+        werte = st.text_area("Vorlieben und Abneigungen", placeholder="z.B. Humor, prägnante Inhalte, keine langen Erklärvideos")
 
         # Verhaltensdaten
-        einkaufsgewohnheiten = st.text_area("Einkaufsgewohnheiten")
-        nutzung_sozialer_medien = st.text_area("Nutzung Sozialer Medien")
-        markenpraferenzen = st.text_area("Markenpräferenzen")
+        einkaufsgewohnheiten = st.text_area("Bevorzugte Tik Tok Inhalte", placeholder="z.B. Fashion, Beauty, Comedy, DIY")
+        nutzung_sozialer_medien = st.selectbox("Nutzung Sozialer Medien",["Nie","0h-2h Täglich","2h-4h Täglich","Öfter"])
+        markenpraferenzen = st.text_area("Lieblingschannels und Influencer")
 
         # Knopf zum Absenden des Formulars
-        submit_button = st.form_submit_button("Abschicken")
+        submit_button = st.form_submit_button("Persona speichern")
 
         if submit_button:
             # Speichern der Persona-Daten im session_state

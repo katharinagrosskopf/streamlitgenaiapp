@@ -1,0 +1,74 @@
+/* style.css */
+body {
+    font-family: 'Lobster';
+    color: #474aff;
+}
+
+h1 {
+    color: #bb2cfe; 
+    font-family: 'Lobster', bold;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #fe2c91; }
+    50% { color: #f42525; }
+    100% { color: #5e0303; }
+}
+
+.stSlider {
+    border: 2px solid #25f4ee;
+    border-radius: 5px;
+    font-family: 'Lobster';
+    background-color: rgb(233, 255, 255);
+    color: #000;
+}
+
+.stSelectbox {
+    border: 2px solid #25f4ee;
+    border-radius: 5px;
+    font-family: 'Lobster';
+    background-color:rgb(233, 255, 255);
+    color: #000;
+}
+
+.stButton button {
+    background-color: #25f4ee;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.stButton button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.stSidebar .sidebar-title {
+    background-color: #bb2cfe; 
+}
+
+.stTextInput input, .stTextArea textarea {
+    border: 2px solid #25f4ee;
+    border-radius: 5px;
+    font-family: 'Lobster';
+    background-color: rgb(233, 255, 255);
+}
+
+.stDownloadButton button {
+    background-color: #25f4ee;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.stDownloadButton button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+header {
+    background-color: #25f4ee;
+    color: #ff4747;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}

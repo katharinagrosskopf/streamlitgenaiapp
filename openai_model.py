@@ -61,9 +61,9 @@ def app():
         persona_str = ", ".join([f"{key}: {value}" for key, value in persona_data.items()])
         company_str = ", ".join([f"{key}: {value}" for key, value in company_data.items()])
 
-        initial_prompt = f"Erstelle Werbetext basierend auf der User Persona ({persona_str}) und Unternehmensdaten ({company_str})."
+        initial_prompt = f"Erstelle Tik Tok Texte basierend auf der User Persona ({persona_str}) und Unternehmensdaten ({company_str})."
     else:
-         initial_prompt = "Bitte geben Sie Informationen zur User Persona und zum Unternehmen ein."
+         initial_prompt = "Bitte geben Sie Informationen zur Persona und zum Channel ein."
 
 # Anzeigen des initialen Prompts
     st.text_area("Initialer Prompt (kopieren und bei Bedarf bearbeiten):", initial_prompt, height=100)
@@ -96,11 +96,11 @@ def app():
 
 # Handle run status
     if hasattr(st.session_state.run, 'status'):
-        if st.session_state.run.status == "running":
+        if st.session_state.run.status == "Bearbeitet":
             placeholder = st.empty()
             with placeholder.container():
                 with st.chat_message('assistant'):
-                    st.write("Thinking ......")
+                    st.write("Kurz nachdenken ......")
 
         elif st.session_state.run.status == "failed":
             st.session_state.retry_error += 1
