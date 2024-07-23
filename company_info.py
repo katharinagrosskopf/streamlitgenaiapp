@@ -15,7 +15,7 @@ def app():
         ziele = st.text_area("Zielsetzung der Texte", placeholder="z.B. Unterhaltung, Information, Inspiration")
 
         # Informationen zur Markenpersönlichkeit
-        markenpersoenlichkeit = st.text_area("Creatorpersönlichkeit und -werte")
+        markenpersoenlichkeit = st.text_area("Creatorpersönlichkeit und -werte", placeholder="z.B. humorvoll, authentisch, kreativ")
 
         # Informationen zu Hauptzielgruppen
         hauptzielgruppen = st.text_area("Hauptzielgruppen des Channels", placeholder="z.B. Gen Alpha, Gen Z, Millennials")

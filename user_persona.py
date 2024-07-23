@@ -2,7 +2,7 @@
 import streamlit as st
 
 def app():
-    st.title('Zielgruppenprofil')
+    st.title('Zielgruppenpersona')
 
     # Eingabefelder für grundlegende Informationen der User Persona
     with st.form(key='user_persona_form'):
